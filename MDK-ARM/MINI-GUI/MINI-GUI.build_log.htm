@@ -1,0 +1,177 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 LBT, 1, LIC=CZLZX-HXCAF-74ES0-BD5WE-LH2EV-E281Q
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.6.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\MINI-GUI\MDK-ARM\MINI-GUI.uvprojx
+Project File Date:  01/21/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'MINI-GUI'
+compiling gpio.c...
+compiling main.c...
+compiling i2c.c...
+compiling tim.c...
+compiling spi.c...
+compiling usart.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling dma.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_spi.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_uart.c...
+compiling oled.c...
+compiling basicGraph.c...
+..\GUILib\libConfig.h(10): warning:  #1-D: last line of file ends without a newline
+  #include "bsp.h"
+..\GUILib\basicGraph.c(16): warning:  #223-D: function "memset" declared implicitly
+    memset(ScreenBuffer, val, sizeof(ScreenBuffer));
+..\GUILib\basicGraph.c(16): error:  #20: identifier "ScreenBuffer" is undefined
+    memset(ScreenBuffer, val, sizeof(ScreenBuffer));
+..\GUILib\basicGraph.c(25): error:  #20: identifier "SCREEN_COLUMN" is undefined
+    if (x > SCREEN_COLUMN - 1 || y > SCREEN_ROW - 1) //超出范围
+..\GUILib\basicGraph.c(25): error:  #20: identifier "SCREEN_ROW" is undefined
+    if (x > SCREEN_COLUMN - 1 || y > SCREEN_ROW - 1) //超出范围
+..\GUILib\basicGraph.c(29): error:  #20: identifier "ScreenBuffer" is undefined
+      ScreenBuffer[y / SCREEN_PAGE_NUM][x] |= 1 << (y % SCREEN_PAGE_NUM);
+..\GUILib\basicGraph.c(29): error:  #20: identifier "SCREEN_PAGE_NUM" is undefined
+      ScreenBuffer[y / SCREEN_PAGE_NUM][x] |= 1 << (y % SCREEN_PAGE_NUM);
+..\GUILib\basicGraph.c(31): error:  #20: identifier "ScreenBuffer" is undefined
+      ScreenBuffer[y / SCREEN_PAGE_NUM][x] &= ~(1 << (y % SCREEN_PAGE_NUM));
+..\GUILib\basicGraph.c(31): error:  #20: identifier "SCREEN_PAGE_NUM" is undefined
+      ScreenBuffer[y / SCREEN_PAGE_NUM][x] &= ~(1 << (y % SCREEN_PAGE_NUM));
+..\GUILib\basicGraph.c(44): error:  #20: identifier "IMAGE" is undefined
+  void draw_line(IMAGE *img, int x1, int y1, int x2, int y2, unsigned long c) {
+..\GUILib\basicGraph.c(46): warning:  #223-D: function "abs" declared implicitly
+      int dx = abs(x2 - x1),
+..\GUILib\basicGraph.c(73): warning:  #223-D: function "putpixel" declared implicitly
+              putpixel(img, cy, cx, c);
+..\GUILib\basicGraph.c(84): warning:  #223-D: function "putpixel" declared implicitly
+              putpixel(img, cx, cy, c);
+..\GUILib\basicGraph.c(94): error:  #20: identifier "u16" is undefined
+  void LCD_Color_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 *color)
+..\GUILib\basicGraph.c(94): error:  #20: identifier "u16" is undefined
+  void LCD_Color_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 *color)
+..\GUILib\basicGraph.c(94): error:  #20: identifier "u16" is undefined
+  void LCD_Color_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 *color)
+..\GUILib\basicGraph.c(94): error:  #20: identifier "u16" is undefined
+  void LCD_Color_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 *color)
+..\GUILib\basicGraph.c(94): error:  #20: identifier "u16" is undefined
+  void LCD_Color_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 *color)
+..\GUILib\basicGraph.c(96): error:  #20: identifier "u16" is undefined
+  	u16 height,width;
+..\GUILib\basicGraph.c(97): error:  #20: identifier "u16" is undefined
+  	u16 i,j;
+..\GUILib\basicGraph.c(102): warning:  #223-D: function "LCD_SetCursor" declared implicitly
+   		LCD_SetCursor(sx,sy+i);   	//设置光标位置 
+..\GUILib\basicGraph.c(103): warning:  #223-D: function "LCD_WriteRAM_Prepare" declared implicitly
+  		LCD_WriteRAM_Prepare();     //开始写入GRAM
+..\GUILib\basicGraph.c(104): warning:  #223-D: function "LCD_WR_DATA" declared implicitly
+  		for(j=0;j<width;j++)LCD_WR_DATA(color[i*width+j]);//写入数据 
+..\GUILib\basicGraph.c(110): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
+..\GUILib\basicGraph.c(110): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
+..\GUILib\basicGraph.c(110): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
+..\GUILib\basicGraph.c(110): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
+..\GUILib\basicGraph.c(112): warning:  #223-D: function "LCD_DrawLine" declared implicitly
+  	LCD_DrawLine(x1,y1,x2,y1);
+..\GUILib\basicGraph.c(125): error:  #20: identifier "IMAGE" is undefined
+  inline void _draw_circle_8(IMAGE *img, int xc, int yc, int x, int y, unsigned long c) {
+..\GUILib\basicGraph.c(127): warning:  #223-D: function "putpixel" declared implicitly
+      putpixel(img, xc + x, yc + y, c);
+..\GUILib\basicGraph.c(138): error:  #20: identifier "IMAGE" is undefined
+  void draw_circle(IMAGE *img, int xc, int yc, int r, int fill, unsigned long c) {
+..\GUILib\basicGraph.c(179): warning:  #1-D: last line of file ends without a newline
+  //圆弧 
+..\GUILib\basicGraph.c: 11 warnings, 21 errors
+compiling w25qxx.c...
+compiling bsp.c...
+..\BSP\bsp.c(48): warning:  #940-D: missing return statement at end of non-void function "ssd1306WriteData" 
+  }
+..\BSP\bsp.c(65): warning:  #144-D: a value of type "void (*)(uint32_t)" cannot be used to initialize an entity of type "void (*)(uint16_t)"
+      .delayMs = HAL_Delay,
+..\BSP\bsp.c: 2 warnings, 0 errors
+compiling widget.c...
+..\GUILib\widget.c(10): warning:  #1-D: last line of file ends without a newline
+  #include "widget.h"
+..\GUILib\libConfig.h(10): warning:  #1-D: last line of file ends without a newline
+  #include "bsp.h"
+..\GUILib\widget.c: 2 warnings, 0 errors
+compiling view.c...
+..\GUILib\libConfig.h(10): warning:  #1-D: last line of file ends without a newline
+  #include "bsp.h"
+..\GUILib\libConfig.h(10): warning:  #1-D: last line of file ends without a newline
+  #include "bsp.h"
+..\GUILib\view.c(52): warning:  #940-D: missing return statement at end of non-void function "viewConstructor" 
+  }
+..\GUILib\view.c(99): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+          if (priority == -1) //窗口优先级为-1时不刷新
+..\GUILib\view.c(102): warning:  #174-D: expression has no effect
+              viewScheduler.viewID[i]->ViewMethods->viewRefreshBuffer;
+..\GUILib\view.c(91): warning:  #550-D: variable "num"  was set but never used
+      static uint8_t num[MAXviewNum] = {0};
+..\GUILib\view.c: 6 warnings, 0 errors
+"MINI-GUI\MINI-GUI.axf" - 21 Error(s), 21 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_MINI-GUI
+  D:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Keil_v5\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:40
+</pre>
+</body>
+</html>

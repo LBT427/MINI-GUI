@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "stm32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/Keil_v5/ARM/ARMCC/include/"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "STM32F103x6"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
